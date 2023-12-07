@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"GlobalActive"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__main main">
+				<h1 class="main__content">
+					<p class="main__subTitle">ПРЕДЛОЖЕНИЕ ГОДА<br>2024</p>
+					<p class="main__title">24-й контейнер оформим бесплатно</p>
+				</h1>
+			</section>
+			<section class="page__services services">
+				<div class="services__container">
+					<h2 class="services__title title">Наши услуги
+					</h2>
+					<div class="services__body">
+						<div class="services__item">
+							<div class="services__header">Перевозка</div>
+							<a class="services__link" href="#">Оставить заявку</a>
+							<img class="services__img" src="@img/card1.jpg" alt="card">
+						</div>
+						<div class="services__item">
+							<div class="services__header">Оформление</div>
+							<a class="services__link" href="#">Оставить заявку</a>
+							<img class="services__img" src="@img/card2.jpg" alt="card">
+						</div>
+						<div class="services__item">
+							<div class="services__header">Экспедирование</div>
+							<a class="services__link" href="#">Оставить заявку</a>
+							<img class="services__img" src="@img/card3.jpg" alt="card">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__callback callback">
+				<div class="callback__container">
+					<h2 class="callback__title title">Оставить заявку на расчет
+					</h2>
+					<div class="callback__subtitle">Оставьте заявку на расчет и мы ответим вам в ближайшее время
+					</div>
+					<form class="callback__form" action="">
+						<input name="email" type="text" placeholder="Email" class="callback__email">
+						<input name="tel" type="tel" placeholder="Телефон" class="callback__tel">
+						<input name="name" type="text" placeholder="Имя" class="callback__name">
+						<textarea name="desc" placeholder="Описание запроса" cols="30" rows="2"
+							class="callback__desc"></textarea>
+
+						<label class="callback__fileLabel" for="down">Загрузить файл с информацией </label>
+						<label class="callback__file" for="down">
+							<span for="down">Загрузить файл</span>
+							<input type="file" class="callback__down" id="down" value="Загрузить файл">
+						</label>
+						<button class="callback__btn">Отправить заявку</button>
+
+					</form>
+				</div>
+			</section>
+			<section class="page__routes routes">
+				<div class="routes__container">
+					<h2 class="routes__title title">Маршруты доставки</h2>
+					<div class="routes__body">
+						<img class="routes__img" src="@img/map.jpg" alt="map">
+					</div>
+				</div>
+			</section>
+			<div class="aboutUs">
+				<div class="aboutUs__container">
+					<div class="aboutUs__body">
+						<div class="aboutUs__content">
+							<div class="aboutUs__title">GlobalActive</div>
+							<div class="aboutUs__subTitle">Мы активны 24/7 для процветания вашего бизнеса</div>
+							<p class="aboutUs__desc"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+									exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+									dolor
+									in
+									reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+									sint
+									occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+									laborum
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+									ut
+									labore
+									et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi
+									ut
+									aliquip ex ea commodo consequat</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="page__clients clients">
+				<div class="clients__container">
+					<h2 class="clients__title title"></h2>
+					<div class="clients__body">
+						<div class="clients__slider swiper">
+							<button type="button" class="swiper-button-prev">
+								<svg class="swiper-button-prev__svg">
+									<use xlink:href="@img/icons/icons.svg#arrowRight"></use>
+								</svg>
+							</button>
+							<button type="button" class="swiper-button-next">
+								<svg class="swiper-button-next__svg">
+									<use xlink:href="@img/icons/icons.svg#arrowRight"></use>
+								</svg>
+							</button>
+							<div class="clients__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="clients__slide swiper-slide">
+									<img src="@img/komus.png" alt="komus">
+								</div>
+								<div class="clients__slide swiper-slide">
+									<img src="@img/loccitane.png" alt="loccitane">
+								</div>
+								<div class="clients__slide swiper-slide">
+									<img src="@img/yamaguchi.png" alt="yamaguchi">
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
