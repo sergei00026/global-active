@@ -206,6 +206,11 @@
 				margin-bottom: 20px;
 			}
 		}
+		> textarea {
+			&::placeholder {
+				transform: translateY(14px);
+			}
+		}
 	}
 	// .callback__email
 	&__email {
