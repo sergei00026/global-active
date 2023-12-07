@@ -820,6 +820,11 @@ body::after {
   width: 100%;
 }
 
+.menu__lang.active::before {
+  content: "";
+  width: 100%;
+}
+
 .icon-menu {
   display: none;
 }
