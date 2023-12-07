@@ -109,6 +109,12 @@
 				width: 100%;
 			}
 		}
+		&.active {
+			&::before {
+				content: '';
+				width: 100%;
+			}
+		}
 	}
 	// .menu__icon
 	&__icon {
