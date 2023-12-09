@@ -3439,6 +3439,13 @@
     window.addEventListener("load", (function(e) {
         initSliders();
     }));
+    const fileInput = document.querySelector(".callback__down");
+    const fileName = document.querySelector(".callback__nameFile");
+    function handleFileChange() {
+        const file = fileInput.files[0];
+        fileName.textContent = file.name;
+    }
+    fileInput.addEventListener("change", handleFileChange);
     isWebp();
     menuInit();
 })();
