@@ -3446,6 +3446,13 @@
         fileName.textContent = file.name;
     }
     fileInput.addEventListener("change", handleFileChange);
+    const fileInput2 = document.querySelector(".callback__down2");
+    const fileName2 = document.querySelector(".callback__nameFile2");
+    function handleFileChange2() {
+        const file = fileInput2.files[0];
+        fileName2.textContent = file.name;
+    }
+    fileInput2.addEventListener("change", handleFileChange2);
     isWebp();
     menuInit();
 })();
